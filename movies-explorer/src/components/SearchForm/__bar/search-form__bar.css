@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.search-form__bar:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}
+
 @media screen and (max-width: 769px) {    
     .search-form__bar {
         width: 91vw;

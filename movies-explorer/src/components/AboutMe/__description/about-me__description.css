@@ -15,7 +15,7 @@
     }
 }
 
-@media screen and (max-width: 322px) {    
+@media screen and (max-width: 400px) {    
     .about-me__description {
         font-size: 11px;
         line-height: 16px;

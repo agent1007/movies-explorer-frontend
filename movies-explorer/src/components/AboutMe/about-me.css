@@ -1,6 +1,6 @@
 .about-me{
     padding: 110px 0 88px;
-    width: 100%;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 910px) {    
@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (max-width: 322px) {    
+@media screen and (max-width: 400px) {    
     .about-me {
         padding-top: 40px;
     }

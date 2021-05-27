@@ -6,7 +6,7 @@
     color: #8B8B8B;
 }
 
-@media screen and (max-width: 400px) {    
+@media screen and (max-width: 450px) {    
     .regiser__text {
         font-size: 12px;
         line-height: 15px;

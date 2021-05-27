@@ -6,11 +6,11 @@
 
 @media screen and (max-width: 769px) {    
     .about-me__profile {
-        margin: auto 50px;
+        margin: auto 7%;
     }
 }
 
-@media screen and (max-width: 322px) {    
+@media screen and (max-width: 400px) {    
     .about-me__profile {
         display: flex;
         flex-direction: column-reverse;
