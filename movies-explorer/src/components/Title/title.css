@@ -1,0 +1,30 @@
+.title{
+    margin: 0 auto 70px;
+    max-width: 89%;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 23px;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 910px) {    
+    .title {
+        
+        max-width: 87%;
+        
+    }
+}
+
+@media screen and (max-width: 350px) {    
+    .title {
+        font-size: 18px;
+        line-height: 22px;
+        
+        max-width: 88%;
+        padding-bottom: 28px;
+        margin-bottom: 60px;
+    }
+}

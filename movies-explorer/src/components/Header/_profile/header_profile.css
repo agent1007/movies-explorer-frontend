@@ -1,0 +1,12 @@
+.header_profile{
+    background: #202020;
+    align-items: center;
+    width: 89%;
+    margin: auto;
+}
+
+@media screen and (max-width: 769px) {    
+    .header_profile {
+        width: 92%;
+    }
+}

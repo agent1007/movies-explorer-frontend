@@ -1,0 +1,25 @@
+.header__burger-menu{
+    display: none;
+}
+
+@media screen and (max-width: 769px) {    
+    .header__burger-menu {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        background: rgb(32, 32, 32);
+        object-fit: cover;
+        cursor: pointer;
+        background-image: url(../../../images/burger.svg);
+        background-size: cover;
+        outline: none;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    .header__burger-menu {
+        width: 40px;
+        height: 40px;
+    }
+}

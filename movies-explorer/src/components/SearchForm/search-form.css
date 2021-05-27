@@ -1,0 +1,27 @@
+.search-form{
+    display: flex;
+    max-width: 89%;
+    margin: 75px auto 10px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 83px;
+    border-bottom: 2px solid rgba(170,170,170,0.2);
+}
+
+@media screen and (max-width: 769px) {    
+    .search-form {
+        margin-top: 56px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1.3fr 1fr;
+        row-gap: 24px;
+        padding-bottom: 41px;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    .search-form {
+        row-gap: 30px;
+        padding-bottom: 28px;
+    }
+}

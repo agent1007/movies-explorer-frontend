@@ -1,0 +1,16 @@
+.profile__inputs{
+    margin-bottom: 220px;
+    width: 100%;
+}
+
+@media screen and (max-width: 769px) {    
+    .profile__inputs {
+        margin-bottom: 210px;
+    }
+}
+
+@media screen and (max-width: 322px) {    
+    .profile__inputs {
+        margin-bottom: 145%;
+    }
+}

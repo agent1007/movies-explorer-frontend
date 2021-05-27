@@ -1,0 +1,39 @@
+.header__button-enter{
+    width: 76px;
+    height: 32px;
+    margin: 21px 70px 21px 30px;
+    background: #3DDC84;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.header__button-enter:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}
+
+@media screen and (max-width: 910px) {    
+    .header__button-enter {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 322px) {    
+    .header__button-enter {
+        width: 54px;
+        height: 26px;
+        margin: 19px 15px;
+    }
+}

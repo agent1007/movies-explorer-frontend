@@ -1,0 +1,26 @@
+.footer__container{
+    display: flex;
+    margin-left: 70px;
+    max-width: 89%;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 910px) {    
+    .footer__container {
+        margin-left: 37px;
+        max-width: 92%;
+    }
+}
+
+@media screen and (max-width: 322px) {    
+    .footer__container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+}

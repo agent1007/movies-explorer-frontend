@@ -1,0 +1,28 @@
+.promo__link{
+   
+    margin-left: 70px;
+    background: #073042;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.6);
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.promo__link:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}
+
+@media screen and (max-width: 910px) {    
+    .promo__link {
+        margin: auto;
+        text-align: center;
+    }
+}

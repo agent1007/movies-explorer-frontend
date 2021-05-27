@@ -1,0 +1,19 @@
+.promo{
+    width: 100%;
+    padding-bottom: 90px;
+    background-color: #073042;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 910px) {    
+    .promo {
+        flex-direction: column-reverse;
+        padding-bottom: 75px;
+    }
+}
+@media screen and (max-width: 322px) {    
+    .promo {
+        padding-bottom: 30px;
+    }
+}

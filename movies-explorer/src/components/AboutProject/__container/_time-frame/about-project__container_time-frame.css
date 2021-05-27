@@ -1,0 +1,21 @@
+.about-project__container_time-frame{
+    margin-top: 110px;
+    row-gap: 14px;
+    grid-template-columns: 1fr 4fr;
+}
+
+@media screen and (max-width: 769px) {    
+    .about-project__container_time-frame {
+        margin-top: 95px;
+        max-width: 87%;
+        grid-template-columns: 1.07fr 4fr;
+    }
+}
+
+@media screen and (max-width: 322px) {    
+    .about-project__container_time-frame {
+        margin-top: 61px;
+        grid-template-columns: 100px 185px;
+
+    }
+}

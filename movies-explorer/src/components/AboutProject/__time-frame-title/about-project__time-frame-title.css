@@ -1,0 +1,14 @@
+.about-project__time-frame-title{
+    margin: 9px auto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 322px) {    
+    .about-project__time-frame-title {
+        font-size: 11px;
+        line-height: 13px;
+    }
+}

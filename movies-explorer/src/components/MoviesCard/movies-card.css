@@ -1,0 +1,14 @@
+.movies-card{
+    width: 100%;
+    background: #2F2F2F;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 400px) {    
+    .movies-card {
+        flex-direction: column-reverse;
+        width: 94%;
+    }
+}
