@@ -1,3 +1,22 @@
 .movies-card__like_delete{
     background: url(../../../../images/Vector-heartDelete.svg) no-repeat center;
+    width: 14px;
+    height: 12px;
+    align-self: center;
+    border: none;
+    background-color: #2F2F2F;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+}
+
+.movies-card__like_delete:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}
+
+@media screen and (max-width: 400px) {    
+    .movies-card__like_delete {
+        margin-left: 86px;
+    }
 }
