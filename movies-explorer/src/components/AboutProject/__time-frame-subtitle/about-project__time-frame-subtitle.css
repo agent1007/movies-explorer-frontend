@@ -1,0 +1,15 @@
+.about-project__time-frame-subtitle{
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #8B8B8B; 
+}
+
+@media screen and (max-width: 322px) {    
+    .about-project__time-frame-subtitle {
+        font-size: 11px;
+        line-height: 13px;
+    }
+}

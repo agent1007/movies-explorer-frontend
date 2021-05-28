@@ -1,0 +1,25 @@
+.promo__subtitle{
+    margin-left: 70px;
+    margin-bottom: 146px;
+    max-width: 310px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 910px) {    
+    .promo__subtitle {
+        text-align: center;
+        margin: 22px auto 88px;
+    }
+}
+
+@media screen and (max-width: 322px) {    
+    .promo__subtitle {
+        width: 83%;
+        margin-bottom: 80px;
+    }
+}

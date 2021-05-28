@@ -1,0 +1,17 @@
+.search-form__bar-input{
+    width: 90%;
+    margin-left: 25px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    background: #202020;
+    color: #8B8B8B;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 322px) {    
+    .search-form__bar-input {
+        width: 72%;
+    }
+}

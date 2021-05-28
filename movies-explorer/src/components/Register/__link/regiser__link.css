@@ -1,0 +1,19 @@
+.regiser__link{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4285F4;
+    text-decoration: none;
+}
+
+.regiser__link:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}
+
+@media screen and (max-width: 450px) {    
+    .regiser__link {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

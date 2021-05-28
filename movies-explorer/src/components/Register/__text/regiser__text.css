@@ -1,0 +1,14 @@
+.regiser__text{
+    margin-right: 6px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8B8B8B;
+}
+
+@media screen and (max-width: 450px) {    
+    .regiser__text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

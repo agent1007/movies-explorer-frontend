@@ -1,0 +1,10 @@
+.profile__close-button{
+    margin-top: 16px;
+    background: #202020;
+    border-radius: 3px;
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #EE3465;;
+}

@@ -1,0 +1,22 @@
+.not-found__subtitle{
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 208px;
+}
+
+@media screen and (max-width: 769px) {    
+    .not-found__subtitle {
+        margin-bottom: 186px;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    .not-found__subtitle {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 176%;
+    }
+}

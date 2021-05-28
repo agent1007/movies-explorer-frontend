@@ -1,0 +1,5 @@
+.about-project__container{
+    max-width: 89%;
+    margin: auto;
+    display: grid;
+}

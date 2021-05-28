@@ -1,0 +1,13 @@
+.about-me__links{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns:  max-content max-content;
+    list-style-type : none;
+    padding: 0;
+}
+
+@media screen and (max-width: 769px) {    
+    .about-me__links {
+        margin-top: 56px;
+    }
+}

@@ -1,0 +1,23 @@
+.search-form__chapter{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-left: 41px;
+    margin-right: 14px;
+}
+
+@media screen and (max-width: 769px) {    
+    .search-form__chapter {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    .search-form__chapter {
+        font-size: 11px;
+        margin-right: 0;
+    }
+}

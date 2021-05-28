@@ -1,0 +1,7 @@
+@media screen and (max-width: 769px) {    
+    .about-me__profile-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
