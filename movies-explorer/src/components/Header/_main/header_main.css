@@ -1,0 +1,11 @@
+.header_main{
+    align-items: center;
+    width: 89%;
+    margin: auto;
+}
+
+@media screen and (max-width: 769px) {    
+    .header_main {
+        width: 92%;
+    }
+}

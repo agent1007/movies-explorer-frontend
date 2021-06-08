@@ -1,0 +1,9 @@
+.header__burger-menu_main{
+    background: rgb(7, 48, 66);
+        object-fit: cover;
+        cursor: pointer;
+        background-image: url(../../../../images/burger.svg);
+        background-size: cover;
+        outline: none;
+        border: none;
+}

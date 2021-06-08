@@ -6,6 +6,7 @@
     border-bottom: 1px solid #424242;
     padding-bottom: 16px;
     margin-right: 0;
+    position: relative;
 }
 
 .profile__input-container:last-of-type{

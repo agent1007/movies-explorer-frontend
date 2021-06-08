@@ -1,6 +1,6 @@
 .about-me__profile{
     display: flex;
-    margin: auto 7%;
+    margin: auto 70px;
     justify-content: space-between;
 }
 

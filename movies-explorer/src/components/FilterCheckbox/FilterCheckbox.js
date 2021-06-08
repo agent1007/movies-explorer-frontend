@@ -1,10 +1,9 @@
-function FilterCheckbox() {
+function FilterCheckbox({checked}) {
     return (
             <label className="filter-checkbox">
               <input type="checkbox"></input>
-              <span class="slider round"></span>
+              <span className="slider round" onClick={checked}></span>
             </label>
     );
   }
-  
   export default FilterCheckbox;

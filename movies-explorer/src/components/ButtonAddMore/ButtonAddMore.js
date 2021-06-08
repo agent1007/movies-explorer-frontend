@@ -1,7 +1,7 @@
-function ButtonAddMore() {
+function ButtonAddMore({handleClick, AddMoreButtonClassName}) {
     return (
-        <button className="button-add-more">Ещё</button>
+        <button type="button" className={AddMoreButtonClassName} onClick={handleClick}>Ещё</button>
     );
-  }
-  
-  export default ButtonAddMore;
+}
+
+export default ButtonAddMore;
