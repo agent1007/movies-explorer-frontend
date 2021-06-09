@@ -169,7 +169,7 @@ function App() {
     }
     setSavedMovies(savedMovies);
     localStorage.setItem('filteredSavedMovies', JSON.stringify(savedMovies))
-  }, [loggedIn, savedMovies]);
+  }, [loggedIn]);
 
   return (
     <div className="App">
