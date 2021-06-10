@@ -3,7 +3,7 @@ import { useEffect, useContext } from 'react';
 import { useFormWithValidation } from '../hooks/useForm';
 import { useHistory } from 'react-router-dom';
 
-function Profile({ onSignOut, onUpdateUser }) {
+function Profile({ onSignOut, onUpdateUser, isMovieLoadError, setIsMovieLoadError }) {
     const { values, errors, isValid, handleChange, setValues } = useFormWithValidation();
     const history = useHistory();
     const currentUser = useContext(CurrentUserContext);
@@ -26,7 +26,7 @@ function Profile({ onSignOut, onUpdateUser }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        onUpdateUser(values);
+        onUpdateUser(values)
     }
 
     return (

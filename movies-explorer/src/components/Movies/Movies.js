@@ -2,22 +2,16 @@ import MoviesCard from '../MoviesCard/MoviesCard'
 import ButtonAddMore from '../ButtonAddMore/ButtonAddMore';
 import SearchForm from '../SearchForm/SearchForm';
 import Navigation from '../Navigation/Navigation';
-import { filterMovies } from '../../utils/FilterMovies';
+
 import { useState, useEffect } from 'react';
 import Preloader from '../Preloader/Preloader';
 
 
-function Movies({ onAddPlace, onMoviesLike, isSaved, checked, setChecked, movieCounter, setMovieCounter, shortMovies, setShortMovies,
+function Movies({ onAddPlace, onMoviesLike, isSaved, checked, setChecked, filteredMovies, setFilteredMovies, searchQuery, setSearchQuery,
+   movieCounter, setMovieCounter, shortMovies, setShortMovies, displayedMovies, setDisplayedMovies, filtred, shortFilm,
   setIsSaved, movies, savedMovies, onAddLike, onRemoveLike, isMovieLiked, isPreloader, isMovieLoadError }) {
 
-  // отфильтрованные фильмы
-  const [filteredMovies, setFilteredMovies] = useState([]);
 
-  // отображаемые фильмы
-  const [displayedMovies, setDisplayedMovies] = useState([]);
-
-  // строка поиска фильмов
-  const [searchQuery, setSearchQuery] = useState('');
 
   // запись значения поля ввода при нажатии на кнопку
   const [searchButton, setSearchButton] = useState('');
@@ -35,8 +29,7 @@ function Movies({ onAddPlace, onMoviesLike, isSaved, checked, setChecked, movieC
 
 
   const emptyMovieBlock = filteredMovies.length === 0;
-  const filtred = filterMovies(movies, searchQuery, checked);
-  const shortFilm = filteredMovies.filter((item) => item.duration < 40)
+
 
   const handleShortMoviesFilter = () => {
     setChecked(!checked);

@@ -15,6 +15,8 @@ import mainApi from '../../utils/MainApi';
 import moviesApi from '../../utils/MoviesApi';
 import * as auth from '../../utils/auth';
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
+import InfoTooltip from '../InfoTooltip/InfoTooltip';
+import { filterMovies } from '../../utils/FilterMovies';
 
 function App() {
 
@@ -93,9 +95,15 @@ function App() {
   function handleUpdateUser(data) {
     mainApi.editProfile(data)
       .then(data => {
+        setSuccess(true);
+        setIsInfoTooltip(true);
         setCurrentUser(data);
       })
-      .catch(err => console.log(err))
+      .catch(err => {
+        setIsInfoTooltip(true);
+        console.log(err)
+        setSuccess(false);
+      });
   }
 
   useEffect(() => {
@@ -115,6 +123,15 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [savedMovies, setSavedMovies] = useState([]);
   const [isSaved, setIsSaved] = useState(false);
+  const [isInfoTooltip, setIsInfoTooltip] = useState(false);
+  const [success, setSuccess] = useState(false)
+
+  function closeAllPopups() {
+    setIsInfoTooltip(false)
+  }
+
+  // отфильтрованные фильмы
+  const [filteredMovies, setFilteredMovies] = useState([]);
 
   // положение чекбокса
   const [checked, setChecked] = useState(false);
@@ -124,6 +141,18 @@ function App() {
 
   // счетчик отображаемых фильмов
   const [movieCounter, setMovieCounter] = useState(0);
+
+  // отображаемые фильмы
+  const [displayedMovies, setDisplayedMovies] = useState([]);
+
+  // строка поиска фильмов
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filtred = filterMovies(movies, searchQuery, checked);
+  const shortFilm = filteredMovies.filter((item) => item.duration < 40)
+
+
+
 
   function getAddMovies() {
     setIsPreloader(true);
@@ -171,6 +200,13 @@ function App() {
     localStorage.setItem('filteredSavedMovies', JSON.stringify(savedMovies))
   }, [loggedIn]);
 
+  useEffect(() => {
+    if (localStorage.filteredMovies) {
+      setFilteredMovies(JSON.parse(localStorage.getItem('filteredMovies')))
+    }
+    setDisplayedMovies(filteredMovies);
+  }, [loggedIn]);
+
   return (
     <div className="App">
       <CurrentUserContext.Provider value={currentUser}>
@@ -204,6 +240,14 @@ function App() {
                 setMovieCounter={setMovieCounter}
                 shortMovies={shortMovies}
                 setShortMovies={setShortMovies}
+                filteredMovies={filteredMovies}
+                setFilteredMovies={setFilteredMovies}
+                displayedMovies={displayedMovies}
+                setDisplayedMovies={setDisplayedMovies}
+                searchQuery={searchQuery}
+                setSearchQuery={setSearchQuery}
+                filtred={filtred}
+                shortFilm={shortFilm}
               />
 
               <ProtectedRoute path="/saved-movies"
@@ -231,6 +275,8 @@ function App() {
                 onUpdateUser={handleUpdateUser}
                 onSignOut={handleSignOut}
                 Name={data.name}
+                isMovieLoadError={isMovieLoadError}
+                setIsMovieLoadError={setIsMovieLoadError}
               />
 
               <Route path="/signin">
@@ -259,6 +305,11 @@ function App() {
             <Navigation
               isOpen={isNavigationOpen}
               onClose={closeNavigation} />
+            <InfoTooltip
+              isOpen={isInfoTooltip}
+              onClose={closeAllPopups}
+              success={success}
+            />
           </div>
           <Footer />
         </div>

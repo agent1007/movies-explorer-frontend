@@ -75,11 +75,7 @@ function Register({ onRegister, isMovieLoadError, setIsMovieLoadError }) {
             > {errors.password || ''}</span>
           </div>
         </div>
-
-
         {!isMovieLoadError ? ('') : (<p className="register__loading">{isMovieLoadError}</p>)}
-
-
         <button
           type="submit"
           className={`register__submit-button ${!isValid && "register__submit-button_disabled"
