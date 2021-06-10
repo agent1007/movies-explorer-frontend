@@ -1,0 +1,13 @@
+.header__movies{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.header__movies:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}

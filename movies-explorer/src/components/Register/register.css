@@ -1,0 +1,9 @@
+.register{
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}

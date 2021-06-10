@@ -1,0 +1,24 @@
+.footer__links{
+    display: grid;
+    grid-template-columns:  max-content max-content max-content;
+    list-style-type : none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+@media screen and (max-width: 375px) {    
+    .footer__links {
+        grid-template-columns:   max-content max-content;
+
+    }
+}
+
+@media screen and (max-width: 322px) {    
+    .footer__links {
+        grid-template-columns:  max-content;
+        padding-left: 0;
+        row-gap: 12px;
+        text-align: center;
+    }
+}

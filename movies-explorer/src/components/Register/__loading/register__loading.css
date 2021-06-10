@@ -1,0 +1,10 @@
+.register__loading{
+    position: absolute;
+    top: 54%;
+    right: 44%;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+
+}

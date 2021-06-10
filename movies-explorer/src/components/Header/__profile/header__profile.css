@@ -1,0 +1,23 @@
+.header__profile{
+    background: #202020;
+    width: 100px;
+    height: 32px;
+    border: 2px solid rgba(170,170,170,0.2);
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.header__profile:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}
+
+@media screen and (max-width: 769px) {    
+    .header__profile {
+        display: none;
+    }
+}

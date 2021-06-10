@@ -1,0 +1,8 @@
+.register__input-container{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.register__input-container:last-of-type{
+    margin-bottom: 0;
+}

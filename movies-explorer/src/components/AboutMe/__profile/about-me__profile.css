@@ -1,0 +1,20 @@
+.about-me__profile{
+    display: flex;
+    margin: auto 70px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 769px) {    
+    .about-me__profile {
+        margin: auto 7%;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    .about-me__profile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: auto 14px;
+    }
+}

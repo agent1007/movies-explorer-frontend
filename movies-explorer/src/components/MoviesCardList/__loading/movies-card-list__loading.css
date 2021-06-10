@@ -1,0 +1,13 @@
+.movies-card-list__loading{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {    
+    .movies-card-list__loading {
+        max-width: 90%;
+        font-size: 20px;
+        margin: auto;
+    }
+}

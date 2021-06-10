@@ -1,0 +1,17 @@
+.search-form__bar-button{
+    margin-right: 7px;
+    background-image: url(../../../images/find.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #202020;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.search-form__bar-button:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}

@@ -1,0 +1,27 @@
+.header__button-register{
+    width: 77px;
+    height: 16px;
+    background: #073042;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.header__button-register:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}
+
+@media screen and (max-width: 322px) {    
+    .header__button-register {
+        font-size: 10px;
+        text-align: right;
+    }
+}

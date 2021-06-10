@@ -1,0 +1,22 @@
+.movies-card__like_active{
+    background: url(../../../../images/Vector-heartActive.svg) no-repeat center;
+    width: 14px;
+    height: 12px;
+    align-self: center;
+    border: none;
+    background-color: #2F2F2F;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+}
+
+.movies-card__like_active:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}
+
+@media screen and (max-width: 400px) {    
+    .movies-card__like_active {
+        margin-left: 86px;
+    }
+}

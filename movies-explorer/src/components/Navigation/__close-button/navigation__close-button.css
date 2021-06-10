@@ -1,0 +1,27 @@
+.navigation__close-button{
+    width: 19px;
+    height: 19px;
+    background: transparent url(../../../images/close-icon.svg) center no-repeat ;
+    background-size: cover;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    top: 28px;
+    right: 28px;
+    outline: none;
+    
+}
+
+.navigation__close-button:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}
+
+@media screen and (max-width: 322px) {    
+    .navigation__close-button {
+        top: 20px;
+        right: 20px;
+        width: 18px;
+        height: 18px;
+    }
+}

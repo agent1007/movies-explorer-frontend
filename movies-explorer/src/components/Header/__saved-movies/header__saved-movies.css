@@ -1,0 +1,12 @@
+.header__saved-movies{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__saved-movies:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+}

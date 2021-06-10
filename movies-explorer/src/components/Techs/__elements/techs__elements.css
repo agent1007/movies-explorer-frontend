@@ -1,0 +1,23 @@
+.techs__elements{
+    max-width: 690px;
+    display: grid;
+    margin: 100px auto 0;
+    grid-template-columns:  repeat(auto-fit, minmax(84px, max-content));
+    gap: 10px;
+    justify-content: center;
+  
+}
+
+@media screen and (max-width: 769px) {    
+    .techs__elements {
+        max-width: 90%;
+        margin: 83px auto 0;
+    }
+}
+
+@media screen and (max-width: 322px) {    
+    .techs__elements {
+        max-width: 84%;
+        margin-top: 50px;
+    }
+}

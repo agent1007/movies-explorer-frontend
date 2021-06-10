@@ -1,0 +1,23 @@
+.portfolio__rows-text{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+@media screen and (max-width: 910px) {    
+    .portfolio__rows-text {
+        font-size: 28px;
+        letter-spacing: -0.04em;
+        
+    }
+}
+
+@media screen and (max-width: 322px) {    
+    .portfolio__rows-text {
+        font-size: 18px;
+        line-height: 28px;
+        
+    }
+}

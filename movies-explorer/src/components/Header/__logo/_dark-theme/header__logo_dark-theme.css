@@ -1,0 +1,16 @@
+.header__logo_dark-theme{
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+@media screen and (max-width: 769px) {    
+    .header__logo_dark-theme {
+        margin-top: 41%;
+    }
+}
+
+@media screen and (max-width: 450px) {    
+    .header__logo_dark-theme {
+        margin: 0 auto 46px;
+    }
+}

@@ -1,0 +1,20 @@
+.not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25%;
+}
+
+@media screen and (max-width: 769px) {    
+    .not-found {
+        padding-top: 53%;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    .not-found {
+        padding-top: 103%;
+        padding-bottom: 0;
+    }
+}

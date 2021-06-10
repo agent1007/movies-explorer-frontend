@@ -1,0 +1,26 @@
+.search-form__bar{
+    width: 72vw;
+    height: 48px;
+    border: 2px solid rgba(170,170,170,0.2);
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form__bar:hover {
+    opacity: 0.6;
+    transition: 1s linear;
+    outline: auto;
+}
+
+@media screen and (max-width: 769px) {    
+    .search-form__bar {
+        width: 91vw;
+        grid-column: 1;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}

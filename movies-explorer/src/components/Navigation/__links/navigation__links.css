@@ -1,0 +1,12 @@
+.navigation__links{
+    margin: 159px auto 300px;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+@media screen and (max-width: 322px) {    
+    .navigation__links {
+        margin: 45% auto 100%;
+    }
+}
